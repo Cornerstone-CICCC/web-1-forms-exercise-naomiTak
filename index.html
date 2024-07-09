@@ -9,6 +9,95 @@
 <body>
     <form enctype="multipart/form-data" action="index.html" method="get">
         <!-- FORM FIELDS HERE -->
+        <form action="index.html" method="get">
+            <fieldset id="personalinformation">
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="name">Name:</label><br/>
+                    <input type="text" name="name" id="name" autocomplete="off">
+                </div>
+                <div>
+                    <label for="email">Email:</label><br/>
+                    <input type="text" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label><br/>
+                    <input type="password" name="password" id="password" minlength="12">
+                </div>
+                <div>
+                    <label for="birthday">Date of Birth:</label><br/>
+                    <input type="date" name="birthday" id="birthday" placeholder="yyyy-mm-dd" value="yyyy-mm-dd">
+                </div>
+            </fieldset>
+            <fieldset id="preferences1">
+                <legend>Preferences</legend>
+                <div>
+                    <label for="color">Favorite Color:</label><br/>
+                    <input type="color" name="color" id="color" value="fff">
+                </div>
+                <div>
+                    <label>
+                        <span>Hobby:</span><br/>
+                        <input type="text" list="hobbies">
+                        <datalist id="hobbies">
+                            <option value="Drawing"></option>
+                            <option value="Swimming"></option>
+                            <option value="Dancing"></option>
+                        </datalist>
+                    </label>
+                </div>
+                <div>
+                    <label for="range">Experience Level:</label><br/>
+                    <input type="range" name="experiencelevel" id="experiencelevel" min="0" max="10" step="1">
+                </div>
+            </fieldset>
+            <fieldset id="contactpreferences">
+                <legend>Contact Preferences</legend>
+                <div>
+                    <label for="">Preferred Contact Method:</label><br/>
+                    <select name="preferredContactMethod">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="mail">Mail</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="subscribe">Subscribe to Newsletter:</label><br/>
+                    <input type="checkbox" name="subscribe" id="subscribe"> 
+                </div>
+            </fieldset>
+            <fieldset id="preferences2"> 
+                <legend>Preferences</legend>
+                <label>Gender:</label>
+                <div>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label><br/>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label><br/>
+                    <input type="radio" name="gender" id="other" value="other">
+                    <label for="other">Other</label><br/>
+                </div>
+            </fieldset>
+            <fieldset id="moreinformation">
+                <legend>More Information</legend>
+                <div>
+                    <label>Bio:</label><br/>
+                    <textarea name="bio" cols="50" rows="5"></textarea>
+                </div>
+            </fieldset>
+            <fieldset id="uploaddocuments">
+                <legend>Upload Documents</legend>
+                <div>
+                    <label>Resume and other certificates:</label><br/>
+                    <input type="file" name="uploaddocuments" accept=".pdf, doc, docx, jpg, png" multiple>
+                </div>
+            </fieldset>
+            <fieldset id="submission">
+                <legend>Submission</legend>
+                <button type="reset" class="btn">Reset</button>
+                <input type="submit" class="btn" value="Send">
+            </fieldset>
+        </form>
     </form>
 </body>
 </html>

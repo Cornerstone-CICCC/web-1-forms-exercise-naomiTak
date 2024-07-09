@@ -12,3 +12,63 @@ form {
   max-width: 600px;
   margin: 20px auto;
 }
+
+fieldset{
+  margin: 10px 0; 
+}
+
+#personalinformation{
+  input{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+#preferences1{
+  input{
+    margin-bottom: 10px;
+  }
+  input[type="color"]{
+    width: 100%;
+  }
+}
+
+#contactpreferences{
+  select{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  div{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+#preferences2{
+  input{
+    margin: 5px 0;
+  }
+}
+
+#moreinformation{
+  textarea{
+    width: 100%;
+  }
+}
+
+#uploaddocuments{
+  input{
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid gray;
+  }
+}
+
+#submission{
+  .btn{
+    color: white;
+    background-color: #488dfc;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+  }
+}
